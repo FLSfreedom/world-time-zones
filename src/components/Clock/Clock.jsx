@@ -13,13 +13,13 @@ const Clock = ({ timeZone = 'UTC' }) => {
       const part2 = timeZoneParts[2] ? timeZoneParts[2].replace(/_/g, ' ') : '';
       return  <div>
                 <div>
-                {part0 + ', '}
+                  {part0 + ', '}
                 </div>
                 <div>
-                {part1 + (part2 ? ', ' : '')}
+                  {part1 + (part2 ? ', ' : '')}
                 </div>
                 <div>
-                {part2 ? part2 : ''}
+                  {part2 ? part2 : ''}
                 </div>
               </div>
     }
