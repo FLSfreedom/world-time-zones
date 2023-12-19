@@ -3,6 +3,7 @@ import LocalTime from '../LocalTime/LocalTime'
 import './NavBar.css'
 
 const NavBar = () => {
+
   return (
     <div className="navBarMainStyle">
         <div className='navTitleStyle'>

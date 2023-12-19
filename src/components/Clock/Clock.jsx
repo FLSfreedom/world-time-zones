@@ -8,9 +8,20 @@ const Clock = ({ timeZone = 'UTC' }) => {
   function getLocation() {
     if (timeZone) {
       const timeZoneParts = timeZone.split('/');
-      const country = timeZoneParts[0].replace(/_/g, ' ');
-      const city = timeZoneParts[1] ? timeZoneParts[1].replace(/_/g, ' ') : '';
-      return `${country}${city ? ', ' + city : ''}`;
+      const part0 = timeZoneParts[0].replace(/_/g, ' ');
+      const part1 = timeZoneParts[1].replace(/_/g, ' ');
+      const part2 = timeZoneParts[2] ? timeZoneParts[2].replace(/_/g, ' ') : '';
+      return  <div>
+                <div>
+                {part0 + ', '}
+                </div>
+                <div>
+                {part1 + (part2 ? ', ' : '')}
+                </div>
+                <div>
+                {part2 ? part2 : ''}
+                </div>
+              </div>
     }
     return '';
   }
