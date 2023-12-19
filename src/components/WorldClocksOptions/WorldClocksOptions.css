@@ -1,0 +1,25 @@
+.highDivContainerOfCardsAndSelector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.otherClocksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.clocksCards {
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+  height: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 5);
+  font-size: 30px;
+}
