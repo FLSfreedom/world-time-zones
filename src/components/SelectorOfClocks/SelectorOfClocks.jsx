@@ -16,7 +16,7 @@ const SelectorOfClocks = ({ timeZones, selectedTimeZone, onSelectZone }) => {
       >
         {timeZones.map((zone, index) => (
           <option key={index} value={zone}>
-            {zone.replace('/', ', ').replace('/', ', ').replace('_', ' ')}
+            {zone.replace('/', ', ').replace('/', ', ').replace('_', ' ').replace('_', ' ')}
           </option>
         ))}
       </select>

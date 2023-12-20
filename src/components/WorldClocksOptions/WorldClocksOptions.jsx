@@ -7,13 +7,15 @@ const WorldClocksOptions = ({ timeZones }) => {
   const [selectedTimeZones, setSelectedTimeZones] = useState([]);
 
   const handleSelectTimeZone = (timeZone) => {
-    const updatedTimeZones = [timeZone, ...selectedTimeZones];
+    if (timeZone !== timeZones[0]) {
+      const updatedTimeZones = [timeZone, ...selectedTimeZones];
 
-    if (updatedTimeZones.length > 10) {
-      updatedTimeZones.pop();
+      if (updatedTimeZones.length > 10) {
+        updatedTimeZones.pop();
+      }
+
+      setSelectedTimeZones(updatedTimeZones);
     }
-
-    setSelectedTimeZones(updatedTimeZones);
   };
 
   return (
