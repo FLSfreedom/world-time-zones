@@ -8,7 +8,8 @@ const SelectorOfClocks = ({ timeZones, selectedTimeZone, onSelectZone }) => {
 
   return (
     <div>
-      <label htmlFor="selectorOfTimeZones">Select Time Zone:</label>
+      <label htmlFor="selectorOfTimeZones">Select 
+      up to 10 Time Zones:</label>
       <select
         id="selectorOfTimeZones"
         value={selectedTimeZone}

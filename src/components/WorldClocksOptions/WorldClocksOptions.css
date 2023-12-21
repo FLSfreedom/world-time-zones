@@ -4,6 +4,15 @@
   align-items: center;
 }
 
+.selectorOfClocksAndClearButtonDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 250px;
+  align-items: center;
+  text-align: center;
+}
+
 .otherClocksContainer {
   display: flex;
   flex-wrap: wrap;

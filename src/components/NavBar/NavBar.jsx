@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <div className="navBarMainStyle">
         <div className='navTitleStyle'>
-            WORLD TIME APP
+            WORLD TIME CLOCK
         </div>
         <div className='localClockInNavBar'>
           <div className='localClockInNavBarTextDiv'>

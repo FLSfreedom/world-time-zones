@@ -18,13 +18,20 @@ const WorldClocksOptions = ({ timeZones }) => {
     }
   };
 
+  const clearAllClocks = () => {
+    setSelectedTimeZones([]);
+  };
+
   return (
     <div className='highDivContainerOfCardsAndSelector'>
-      <SelectorOfClocks
-        timeZones={timeZones}
-        selectedTimeZone={selectedTimeZones[0]}
-        onSelectZone={handleSelectTimeZone}
-      />
+      <div className='selectorOfClocksAndClearButtonDiv'>
+        <SelectorOfClocks
+          timeZones={timeZones}
+          selectedTimeZone={selectedTimeZones[0]}
+          onSelectZone={handleSelectTimeZone}
+        />
+        <button onClick={clearAllClocks}>Clear all clocks</button>
+      </div>
       <div className="otherClocksContainer">
         {selectedTimeZones.map((timeZone, index) => (
           <div key={index} className="clocksCards">
