@@ -35,6 +35,19 @@
   position: relative;
 }
 
+button {
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 3px;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 5);
+  font-weight: bold;
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
 .otherClocksContainer {
   display: flex;
   flex-wrap: wrap;
@@ -43,6 +56,8 @@
 }
 
 .clocksCards {
+  font-weight: bold;
+  font-family: monospace;
   border: 1px solid #ccc;
   background-color: white;
   border-radius: 8px;
@@ -52,7 +67,7 @@
   width: 205px;
   height: 150px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 5);
-  font-size: 30px;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 967px) {
