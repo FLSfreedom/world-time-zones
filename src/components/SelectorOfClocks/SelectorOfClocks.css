@@ -1,0 +1,13 @@
+#selectorOfTimeZones {
+    font-weight: bold;
+    background-color: rgb(89, 116, 165);
+    color: white;
+    width: 70%;
+    height: 30px;
+}
+
+@media screen and (max-width: 470px) {
+    label {
+        font-size: 25px;
+    }
+}

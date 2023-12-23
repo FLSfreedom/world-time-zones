@@ -1,3 +1,13 @@
 #clockId {
     color: rgb(89, 116, 165);
+    font-size: 25px;
+}
+
+.styleForElementsInCardDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.styleForElementsInCardDiv button {
+    align-self: end;
 }

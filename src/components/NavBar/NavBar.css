@@ -28,3 +28,30 @@
 .localTimeDiv {
     color: rgb(15, 228, 164);
 }
+
+@media screen and (max-width: 470px) {
+    .localClockInNavBar {
+        flex-direction: column;
+        font-size: 30px;
+    }
+
+    .navTitleStyle {
+        font-size: 40px;
+    }
+
+    .localClockInNavBarTextDiv {
+        margin-right: 0px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .navBarMainStyle {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .localClockInNavBar {
+        width: 100%;
+        padding: 0%;
+    }
+  }

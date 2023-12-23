@@ -1,22 +1,44 @@
 .highDivContainerOfCardsAndSelector {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .selectorOfClocksAndClearButtonDiv {
+  position: relative;
+  background-color: rgb(89, 116, 165);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 250px;
   align-items: center;
   text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin: 1%;
+}
+
+.selectorOfClocksAndClearButtonDiv::before {
+  content: "";
+  background-image: url('/time-zones.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.selectorOfClocksAndClearButtonDiv div, button {
+  position: relative;
 }
 
 .otherClocksContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 70%;
 }
 
@@ -31,4 +53,23 @@
   height: 150px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 5);
   font-size: 30px;
+}
+
+@media screen and (max-width: 967px) {
+  .highDivContainerOfCardsAndSelector {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .selectorOfClocksAndClearButtonDiv {
+    margin: 0%;
+  }
+
+  .otherClocksContainer {
+    width: 100%;
+  }
+
+  .clocksCards {
+    width: 170px;
+  }
 }

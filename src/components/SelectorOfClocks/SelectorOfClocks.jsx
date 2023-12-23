@@ -1,4 +1,5 @@
 import React from 'react';
+import './SelectorOfClocks.css'
 
 const SelectorOfClocks = ({ timeZones, selectedTimeZone, onSelectZone }) => {
   const handleChange = (event) => {

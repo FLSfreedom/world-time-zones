@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Clock.css';
 
-const Clock = ({ timeZone = 'UTC' }) => {
+const Clock = ({ timeZone = 'UTC', onRemove }) => {
   const [location, setLocation] = useState(getLocation);
   const [time, setTime] = useState(getTime);
 
@@ -50,9 +50,10 @@ const Clock = ({ timeZone = 'UTC' }) => {
     return () => clearInterval(intervalId);
   }, [timeZone]);
 
-  return  <div>
+  return  <div className='styleForElementsInCardDiv'>
+            <button onClick={onRemove}>Close</button>
             <div id="clockId">{location}</div>
-            <div> {time}</div>
+            <div> {time}</div>            
           </div>;
 };
 

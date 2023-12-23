@@ -18,6 +18,12 @@ const WorldClocksOptions = ({ timeZones }) => {
     }
   };
 
+  const removeTimeZone = (index) => {
+    const updatedTimeZones = [...selectedTimeZones];
+    updatedTimeZones.splice(index, 1);
+    setSelectedTimeZones(updatedTimeZones);
+  };
+
   const clearAllClocks = () => {
     setSelectedTimeZones([]);
   };
@@ -30,12 +36,12 @@ const WorldClocksOptions = ({ timeZones }) => {
           selectedTimeZone={selectedTimeZones[0]}
           onSelectZone={handleSelectTimeZone}
         />
-        <button onClick={clearAllClocks}>Clear all clocks</button>
+        <button onClick={clearAllClocks}>Close all clocks</button>
       </div>
       <div className="otherClocksContainer">
         {selectedTimeZones.map((timeZone, index) => (
           <div key={index} className="clocksCards">
-            <Clock timeZone={timeZone} />
+            <Clock timeZone={timeZone} onRemove={() => removeTimeZone(index)} />
           </div>
         ))}
       </div>
