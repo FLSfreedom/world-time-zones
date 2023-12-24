@@ -62,6 +62,7 @@ button:active {
 }
 
 .clocksCards {
+  display: flex;
   font-weight: bold;
   font-family: monospace;
   border: 1px solid #ccc;

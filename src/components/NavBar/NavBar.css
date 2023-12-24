@@ -29,6 +29,12 @@
     color: rgb(15, 228, 164);
 }
 
+@media screen and (min-width: 613px) and (max-width: 625px) {
+    .localClockInNavBar {
+        padding: 0% 0% 0% 2%;
+    }
+  }
+
 @media screen and (max-width: 470px) {
     .localClockInNavBar {
         flex-direction: column;

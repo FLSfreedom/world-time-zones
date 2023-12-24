@@ -1,0 +1,9 @@
+.footerDiv {
+    background-color: rgb(89, 116, 165);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
