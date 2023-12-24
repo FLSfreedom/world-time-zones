@@ -92,5 +92,6 @@ button:active {
 
   .clocksCards {
     width: 170px;
+    font-size: 23px;
   }
 }
