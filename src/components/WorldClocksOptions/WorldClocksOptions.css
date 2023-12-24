@@ -44,6 +44,12 @@ button {
   font-weight: bold;
 }
 
+button:hover {
+  border: 1px solid #181616;
+  background-color:beige;
+  cursor:pointer;
+}
+
 button:active {
   transform: scale(1.1);
 }
