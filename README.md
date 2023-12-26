@@ -1,8 +1,11 @@
-# React + Vite
+## World Time Zones
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React Js + Vite project
 
-Currently, two official plugins are available:
+## Dependencies:
+- React 18.2.0.
+- React DOM 18.2.0.
+- Vite ^4.4.0.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Github repo](https://github.com/FLSfreedom/world-time-zones)
+[Site demo](https://lively-parfait-f04660.netlify.app/)
