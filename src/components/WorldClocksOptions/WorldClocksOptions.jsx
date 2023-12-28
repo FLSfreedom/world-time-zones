@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Clock from '../Clock/Clock';
 import SelectorOfClocks from '../SelectorOfClocks/SelectorOfClocks';
 import './WorldClocksOptions.css';
+import Search from '../Search/Search';
 
 const WorldClocksOptions = ({ timeZones }) => {
   const [selectedTimeZones, setSelectedTimeZones] = useState([]);
@@ -31,6 +32,10 @@ const WorldClocksOptions = ({ timeZones }) => {
   return (
     <div className='highDivContainerOfCardsAndSelector'>
       <div className='selectorOfClocksAndClearButtonDiv'>
+        <Search 
+          timeZones={timeZones}
+          onSelectZone={handleSelectTimeZone}
+        />
         <SelectorOfClocks
           timeZones={timeZones}
           selectedTimeZone={selectedTimeZones[0]}

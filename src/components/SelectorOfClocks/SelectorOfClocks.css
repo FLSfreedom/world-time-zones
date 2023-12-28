@@ -9,6 +9,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 5);
 }
 
+.selectorDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media screen and (max-width: 470px) {
     label {
         font-size: 25px;
