@@ -22,7 +22,7 @@ const Search = ({ timeZones, onSelectZone }) => {
 
   return (
     <div>
-      <div>Search for the time zone you want</div>
+      <div className='searchBarDiv'>Search for the time zone you want!!</div>
       <input value={search} onChange={searcher} type="text" placeholder="Select the time zone you want show" />
         <table>
           <tbody>
