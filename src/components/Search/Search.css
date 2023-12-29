@@ -2,6 +2,11 @@
     font-size: 25px;
 }
 
+input {
+    width: 70%;
+    height: 5vh;
+}
+
 table {
     position:absolute;
     font-size: 14px;
@@ -10,6 +15,12 @@ table {
     z-index: 1;
 }
 
-td:hover {
+td {
+    cursor: crosshair;
+    height: 3vh;
     border: 1px solid white;
+}
+
+td:hover {
+    background-color: rgb(56, 74, 107);
 }
