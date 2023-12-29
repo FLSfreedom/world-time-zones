@@ -1,5 +1,6 @@
 .navBarMainStyle {
-    background-color: rgb(236, 62, 199);
+    background-image: url('/prague-clock.jpg');
+    background-position: center;
     width: 100%;
     display: flex;
     color: white;

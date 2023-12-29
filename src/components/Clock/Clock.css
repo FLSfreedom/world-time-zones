@@ -1,5 +1,5 @@
 #clockId {
-    color: rgb(89, 116, 165);
+    color: white;
 }
 
 .styleForElementsInCardDiv {
@@ -7,6 +7,18 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    background: linear-gradient(to right, rgb(89, 116, 165), rgb(152, 207, 175), rgb(15, 228, 164), rgb(89, 116, 165));
+    background-size: 200% 100%;
+    animation: AnimationOfTheBackground 5s linear infinite;
+}
+
+@keyframes AnimationOfTheBackground {
+    0% {
+    background-position: 100% 0;
+    }
+    100% {
+    background-position: -100% 0;
+    }
 }
 
 .styleForElementsInCardDiv button {
